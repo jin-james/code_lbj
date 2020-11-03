@@ -1,0 +1,120 @@
+{
+  "name": "2019年数学期末考试",
+  "subject": 12345678,
+  "is_in_use": false,
+  "is_lock": false,
+  "is_ban_area": false,
+  "is_footer": false,
+  "is_subject_chk": false,
+  "is_ab": false,
+  "notice": "注意事项",
+  "test_info": "注意事项",
+  "sort_mode": 1,
+  "test_num_layout": 1,
+  "test_num_mode": 2,
+  "cols": 1,
+  "test_num_len": 8,
+  "kind": 1,
+  "category": 4,
+  "status": 1,
+  "extra": "",
+  "pages": [
+    {
+      "columns": [
+        {
+          "number": 1,
+          "areas": [
+            {
+              "name": "客观题",
+              "grp_type": 10,
+              "children": [
+                {
+                  "uid": "f5d054ba1b4149cb914486af10480bf6",
+                  "name": "单选题",
+                  "ques_from": 1,
+                  "ques_to": 10,
+                  "grp_type": 10,
+                  "options": 4
+                },
+                {
+                  "uid": "f5d054ba1b4149cb914486af10480bf6",
+                  "name": "多选题",
+                  "ques_from": 10,
+                  "ques_to": 20,
+                  "grp_type": 11,
+                  "options": 7
+                }
+              ]
+            },
+            {
+              "name": "填空题",
+              "grp_type": 20,
+              "children": [
+                {
+                  "uid": "f5d054ba1b4149cb914486af10480bf6",
+                  "name": "填空题",
+                  "ques_from": 1,
+                  "ques_to": 10,
+                  "grp_type": 20,
+                  "lines": 3
+                },
+                {
+                  "uid": "f5d054ba1b4149cb914486af10480bf6",
+                  "name": "填空题",
+                  "ques_from": 11,
+                  "ques_to": 20,
+                  "grp_type": 20,
+                  "lines": 3
+                }
+              ]
+            },
+            {
+              "name": "解答题",
+              "grp_type": 40,
+              "children": [
+                {
+                  "uid": "7c5e727684be44d5a1e19fbf9adf8550",
+                  "embed": "富文本",
+                  "ques_from": 11,
+                  "ques_to": 20,
+                  "lines": 200
+                },
+                {
+                  "uid": "7c5e727684be44d5a1e19fbf9adf8550",
+                  "embed": "",
+                  "ques_from": 11,
+                  "ques_to": 20,
+                  "lines": 200
+                }
+              ]
+            },
+            {
+              "name": "英语作文",
+              "grp_type": 40,
+              "children": [
+                {
+                  "uid": "7c5e727684be44d5a1e19fbf9adf8550",
+                  "ques_from": 11,
+                  "ques_to": 20,
+                  "lines": 200
+                }
+              ]
+            },
+            {
+              "name": "英语作文",
+              "grp_type": 50,
+              "children": [
+                {
+                  "uid": "7c5e727684be44d5a1e19fbf9adf8550",
+                  "ques_from": 11,
+                  "ques_to": 20,
+                  "lines": 200
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
