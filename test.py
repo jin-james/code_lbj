@@ -525,6 +525,58 @@ def findPeakElement_162(nums):
     return res
 
 
+def permute_46(self, nums):
+    """
+    :type nums: List[int]
+    :rtype: List[List[int]]
+    """
+    # 排列问题，使用used
+    if not len(nums):
+        return []
+    res, temp = [], []
+
+    def dfs(nums, used, temp, res):
+        if len(temp) == len(nums):
+            res.append(temp[:])
+            return
+        for i in range(len(nums)):
+            if not used[i]:
+                used[i] = True
+                dfs(nums, used, temp + [nums[i]], res)
+                used[i] = False
+
+    used = [False for _ in range(len(nums))]
+    dfs(nums, used, temp, res)
+    return res
+
+
+def combinationSum_39(self, candidates, target):
+    """
+    :type candidates: List[int]
+    :type target: int
+    :rtype: List[List[int]]
+    """
+    # 回溯算法, 递归+深度优先遍历
+    # 不重复元素，则使用begin
+    if not len(candidates):
+        return
+    res, temp = [], []
+    candidates.sort()
+
+    def dfs(candidates, begin, res, temp, target):
+        if target == 0:
+            res.append(temp)
+            return
+        for i in range(begin, len(candidates)):
+            rest = target - candidates[i]
+            if rest < 0:
+                break
+            dfs(candidates, i, res, temp + [candidates[i]], rest)
+
+    dfs(candidates, 0, res, temp, target)
+    return res
+
+
 if __name__ == '__main__':
     nums1 = [-1,0,0,3,3,3,0,0,0]
     nums2 = [1,2,2]
