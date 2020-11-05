@@ -577,7 +577,23 @@ def combinationSum_39(self, candidates, target):
     return res
 
 
+def isPalindrome_9(x):
+    """
+    :type x: int
+    :rtype: bool
+    """
+    if x < 0:
+        return False
+    num = x
+    sum, rest = 0, 0
+    while num>0:
+        num, rest = divmod(num, 10)
+        sum += rest
+        if num:
+            sum *= 10
+    return sum == x
+
+
 if __name__ == '__main__':
-    nums1 = [-1,0,0,3,3,3,0,0,0]
-    nums2 = [1,2,2]
-    print(merge_88(nums1, nums2))
+    nums = 121
+    print(isPalindrome_9(nums))
